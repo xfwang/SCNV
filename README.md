@@ -30,6 +30,8 @@ java -jar GenomeAnalysisTK.jar \-omitBaseOutput \ -T DepthOfCoverage \ -R hg19.u
 
 2. Initial CNV discovery (segmentation)
 -----------
+**Steps:** 
+1) Convert the .bam file to read-coverage file using the script **bam2read.sh**
 
 
 
