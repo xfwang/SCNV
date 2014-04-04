@@ -7,9 +7,10 @@ The Single-cell Sequencing Analysis Toolkit (or SinSeq) provides various utiliti
 1. Preprocessing
 -----------
 
-Steps (from .bam files)
-
-1) dfdf
+Steps
+0) .fastq --> .bam
+1) Sort and reorder .bam files (according to the referen genome)
+2) 
 
 
 
