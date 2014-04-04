@@ -1,4 +1,4 @@
 SinSeq
 =======
 
-Single-cell sequencing data analysis
+SinSeq provides various utilities for manipulating and analyzing data generated from Single-cell sequencing.
