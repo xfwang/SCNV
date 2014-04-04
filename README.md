@@ -29,7 +29,7 @@ java -jar GenomeAnalysisTK.jar \-omitBaseOutput \ -T DepthOfCoverage \ -R hg19.u
 
 
 
-2. Initial CNV discovery (control-free segmentation)
+2. Initial CNV discovery (segmentation)
 -----------
 
 
