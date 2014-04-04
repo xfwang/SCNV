@@ -34,7 +34,7 @@ java -jar GenomeAnalysisTK.jar \-omitBaseOutput \ -T DepthOfCoverage \ -R hg19.u
 
 
 
-3. Control-based CNV-calling 
+3. CNV-calling with controls
 -----------
 
 
