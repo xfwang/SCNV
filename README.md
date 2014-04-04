@@ -6,3 +6,9 @@ The Single-cell Sequencing Analysis Toolkit (or SinSeq) provides various utiliti
 
 Preprocessing
 -----------
+
+
+
+
+CNV-calling 
+-----------
