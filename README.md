@@ -16,7 +16,7 @@ Usage: ./bamGATKsort.sh cellname.bam
 ```
 2) Run DepthOfCoverage
 ```
-java -jar ~/libraries/GenomeAnalysisTK-2.5-2-gf57256b/GenomeAnalysisTK.jar \-omitBaseOutput \ -T DepthOfCoverage \ -R hg19.ucsc.fa \ -I CJA0748.final.bam \ -o CJA0748.coverage
+java -jar GenomeAnalysisTK.jar \-omitBaseOutput \ -T DepthOfCoverage \ -R hg19.ucsc.fa \ -I CJA0748.final.bam \ -o CJA0748.coverage
 ```
 
 
