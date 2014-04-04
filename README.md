@@ -4,22 +4,22 @@ SinSeq: Single-cell sequencing analysis toolkit
 The Single-cell Sequencing Analysis Toolkit (or SinSeq) provides various utilities for manipulating and analyzing data generated from Single-cell sequencing.
 
 
-Preprocessing
+1. Preprocessing
 -----------
 
 
 
 
-Initial CNV-calling (control-free)
+2. Initial CNV-calling (control-free)
 -----------
 
 
 
-Control-based CNV-calling 
+3. Control-based CNV-calling 
 -----------
 
 
 
 
-Intratumor heterogeneity (clustering)
+4. Intratumor heterogeneity (clustering)
 -----------
