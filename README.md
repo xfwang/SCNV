@@ -39,5 +39,5 @@ java -jar GenomeAnalysisTK.jar \-omitBaseOutput \ -T DepthOfCoverage \ -R hg19.u
 
 
 
-4. Intra-tumor heterogeneity (clustering)
+4. Intra-tumor heterogeneity
 -----------
