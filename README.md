@@ -17,3 +17,9 @@ Initial CNV-calling (control-free)
 
 Control-based CNV-calling 
 -----------
+
+
+
+
+Intratumor heterogeneity
+-----------
