@@ -33,7 +33,7 @@ java -jar GenomeAnalysisTK.jar \-omitBaseOutput \ -T DepthOfCoverage \ -R hg19.u
 **Steps:** 
 1) Convert the .bam file to read-coverage file using the following one-liner:   
 ```
-dfd
+samtools view cell.final.bam | awk '{print $3,$4}' > cell.rc
 ```
 
 
