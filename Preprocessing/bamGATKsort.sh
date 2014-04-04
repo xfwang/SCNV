@@ -4,7 +4,7 @@
 ##
 
 date #echo the time at start
-picard_path="/home/xw75/libraries/picard-tools-1.107" #picard directory
+picard_path="~/libraries/picard-tools-1.107" #picard directory
 ref_fa="hg19.ucsc.fa"   #referene .fasta file name  (also need .fai and .dict files)
 
 ###bam file preprocessing
