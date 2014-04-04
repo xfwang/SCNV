@@ -8,7 +8,8 @@ The Single-cell Sequencing Analysis Toolkit (or SinSeq) provides various utiliti
 -----------
 
 Steps (from .bam files)
-1) 
+
+1) dfdf
 
 
 
