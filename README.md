@@ -14,9 +14,9 @@ Steps:
 ```
 Usage: ./bamGATKsort.sh cellname.bam  
 ```
-2) Run DepthOfCoverage
+2) Run DepthOfCoverage (Input cell.final.bam
 ```
-java -jar GenomeAnalysisTK.jar \-omitBaseOutput \ -T DepthOfCoverage \ -R hg19.ucsc.fa \ -I CJA0748.final.bam \ -o CJA0748.coverage
+java -jar GenomeAnalysisTK.jar \-omitBaseOutput \ -T DepthOfCoverage \ -R hg19.ucsc.fa \ -I cell.final.bam \ -o CJA0748.coverage
 ```
 
 
