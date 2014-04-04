@@ -9,7 +9,9 @@ The Single-cell Sequencing Analysis Toolkit (or SinSeq) provides various utiliti
 
 Steps
 0) .fastq --> .bam
+
 1) Sort and reorder .bam files (according to the referen genome)
+
 2) 
 
 
