@@ -7,6 +7,9 @@ The Single-cell Sequencing Analysis Toolkit (or SinSeq) provides various utiliti
 1. Preprocessing
 -----------
 
+Steps (from .bam files)
+1) 
+
 
 
 
