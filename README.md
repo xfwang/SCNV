@@ -11,10 +11,11 @@ The Single-cell Sequencing Analysis Toolkit (or SinSeq) provides various utiliti
 Steps:    
 0) .fastq --> .bam (alignment using tools such as bowtie, not included in this toolkit)    
 1) Sort and reorder .bam files (according to the referen genome) based on the script **bamGATKsort.sh** . The human reference genome files can be prepared using the script **hg19_reference.sh**
+Input:cell.bam Output: cell.final.bam
 ```
-Usage: ./bamGATKsort.sh cellname.bam  
+Usage: ./bamGATKsort.sh cell.bam  
 ```
-2) Run DepthOfCoverage (Input cell.final.bam
+2) Run DepthOfCoverage (Input cell.final.bam)
 ```
 java -jar GenomeAnalysisTK.jar \-omitBaseOutput \ -T DepthOfCoverage \ -R hg19.ucsc.fa \ -I cell.final.bam \ -o cell.coverage
 ```
