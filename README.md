@@ -21,5 +21,5 @@ Control-based CNV-calling
 
 
 
-Intratumor heterogeneity (clustring)
+Intratumor heterogeneity (clustering)
 -----------
