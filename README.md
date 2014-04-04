@@ -11,6 +11,11 @@ The Single-cell Sequencing Analysis Toolkit (or SinSeq) provides various utiliti
 Steps:    
 0) .fastq --> .bam (alignment using tools such as bowtie, not included in this toolkit)    
 1) Sort and reorder .bam files (according to the referen genome) based on the script **bamGATKsort.sh**   
+```
+dfdfdfdf
+```
+
+
 2) 
 
 
