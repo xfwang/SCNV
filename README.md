@@ -10,7 +10,7 @@ The Single-cell Sequencing Analysis Toolkit (or SinSeq) provides various utiliti
 
 
 
-2. Initial CNV-calling (control-free)
+2. Initial CNV discovery (control-free calling)
 -----------
 
 
