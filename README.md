@@ -14,7 +14,7 @@ System Requirements: R,GATK,samtools,picard
 
 **Steps:**    
 0) .fastq --> .bam (alignment using tools such as bowtie, not included in this toolkit)    
-1) Sort and reorder .bam files (according to the referen genome) based on the script ***bamGATKsort.sh*** . The human reference genome files can be prepared using the script ***hg19_reference.sh***   
+1) Sort and reorder .bam files (according to the referen genome) based on the script **bamGATKsort.sh** . The human reference genome files can be prepared using the script **hg19_reference.sh**  
 Input:cell.bam Output: cell.final.bam
 ```
 Usage: ./bamGATKsort.sh cell.bam  
