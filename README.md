@@ -14,8 +14,6 @@ Steps:
 ```
 Usage: ./bamGATKsort.sh cellname.bam  
 ```
-
-
 2) 
 
 
