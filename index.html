@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Sinseq by xfwang</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Sinseq</h1>
+        <p>Single-cell sequencing data analysis</p>
+
+        <p class="view"><a href="https://github.com/xfwang/SinSeq">View the Project on GitHub <small>xfwang/SinSeq</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/xfwang/SinSeq/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/xfwang/SinSeq/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/xfwang/SinSeq">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="sinseq-single-cell-sequencing-analysis-toolkit" class="anchor" href="#sinseq-single-cell-sequencing-analysis-toolkit"><span class="octicon octicon-link"></span></a>SinSeq: Single-cell sequencing analysis toolkit</h1>
+
+<p>The Single-cell Sequencing Analysis Toolkit (or SinSeq) provides various utilities for manipulating and analyzing data generated from Single-cell sequencing.</p>
+
+<p>System Requirements: R,GATK,samtools,picard</p>
+
+<h2>
+<a name="1-preprocessing" class="anchor" href="#1-preprocessing"><span class="octicon octicon-link"></span></a>1. Preprocessing</h2>
+
+<p><strong>Steps:</strong><br>
+0) .fastq --&gt; .bam (alignment using tools such as bowtie, not included in this toolkit)<br>
+1) Sort and reorder .bam files (according to the referen genome) based on the script <strong><em>bamGATKsort.sh</em></strong> . The human reference genome files can be prepared using the script <strong><em>hg19_reference.sh</em></strong><br>
+Input:cell.bam Output: cell.final.bam</p>
+
+<pre><code>Usage: ./bamGATKsort.sh cell.bam  
+</code></pre>
+
+<p>2) Run <strong>DepthOfCoverage</strong> (Input cell.final.bam)</p>
+
+<pre><code>java -jar GenomeAnalysisTK.jar \-omitBaseOutput \ -T DepthOfCoverage \ -R hg19.ucsc.fa \ -I cell.final.bam \ -o cell.coverage
+</code></pre>
+
+<p>3) Draw coverage histogram</p>
+
+<h2>
+<a name="2-initial-cnv-discovery-control-free-calling" class="anchor" href="#2-initial-cnv-discovery-control-free-calling"><span class="octicon octicon-link"></span></a>2. Initial CNV discovery (control-free calling)</h2>
+
+<h2>
+<a name="3-control-based-cnv-calling-" class="anchor" href="#3-control-based-cnv-calling-"><span class="octicon octicon-link"></span></a>3. Control-based CNV-calling </h2>
+
+<h2>
+<a name="4-intratumor-heterogeneity-clustering" class="anchor" href="#4-intratumor-heterogeneity-clustering"><span class="octicon octicon-link"></span></a>4. Intratumor heterogeneity (clustering)</h2>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/xfwang">xfwang</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
