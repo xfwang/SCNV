@@ -36,6 +36,7 @@ java -jar GenomeAnalysisTK.jar \-omitBaseOutput \ -T DepthOfCoverage \ -R hg19.u
 ```
 samtools view cell.final.bam | awk '{print $3,$4}' > cell.rc
 ```
+2) Define mappable positions boundaries
 
 
 
