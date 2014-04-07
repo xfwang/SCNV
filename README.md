@@ -36,7 +36,7 @@ java -jar GenomeAnalysisTK.jar \-omitBaseOutput \ -T DepthOfCoverage \ -R hg19.u
 ```
 samtools view cell.final.bam | awk '{print $3,$4}' > cell.rc
 ```
-2) Define boundaries based on mappable positions. This step can be done using ``hg19.bin.bondaries.50k.py`` as described in the Baslan Nat. Protoc. 2012.
+2) Define boundaries based on mappable positions. This step can be done using the script ``hg19.bin.bondaries.50k.py`` as described in the Baslan Nat. Protoc. 2012.
 
 
 
