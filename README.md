@@ -38,6 +38,8 @@ samtools view cell.final.bam | awk '{print $3,$4}' > cell.rc
 ```
 2) Define boundaries based on mappable positions. This step can be done using the script ``hg19.bin.bondaries.50k.py`` ( Baslan Nat. Protoc. 2012).
 
+3) Count the number of reads in each defined bin:
+
 
 
 3. CNV-calling with controls
