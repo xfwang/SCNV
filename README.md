@@ -37,6 +37,7 @@ java -jar GenomeAnalysisTK.jar \-omitBaseOutput \ -T DepthOfCoverage \ -R hg19.u
 samtools view cell.final.bam | awk '{print $3,$4}' > cell.rc
 ```
 2) Define boundaries based on mappable positions and calculate the GC content in each bin. This step can be done using the scripts ``hg19.bin.bondaries.50k.py`` and ``(hg19.varbin.gc.content.50k.bowtie.k50.py``( Baslan Nat. Protoc. 2012).
+Refer to **hg19_reference.sh** for the reference genome preparation.
 
 3) Count the number of reads in each defined bin: **read_count.R**
 
