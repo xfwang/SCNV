@@ -23,6 +23,7 @@ Usage: ./bamGATKsort.sh cell.bam
 ```
 java -jar GenomeAnalysisTK.jar \-omitBaseOutput \ -T DepthOfCoverage \ -R hg19.ucsc.fa \ -I cell.final.bam \ -o cell.coverage
 ```
+
 3) Draw coverage histogram and sample statistics
 
 
