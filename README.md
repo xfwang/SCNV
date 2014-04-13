@@ -1,4 +1,4 @@
-Sinsat: Single-cell sequencing CNV analysis toolkit
+Sinsat: Single-cell Sequencing Analysis Toolkit
 =======
 
 The Single-cell Sequencing Analysis Toolkit (or Sinsat) provides various utilities for manipulating and analyzing data generated from Single-cell sequencing.
