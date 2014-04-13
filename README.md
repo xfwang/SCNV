@@ -1,4 +1,4 @@
-SinSeq: Single-cell sequencing analysis toolkit
+SinC: Single-cell Sequencing CNV analysis toolkit
 =======
 
 The Single-cell Sequencing Analysis Toolkit (or SinSeq) provides various utilities for manipulating and analyzing data generated from Single-cell sequencing.
