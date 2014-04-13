@@ -18,29 +18,29 @@
         <h1>Sinseq</h1>
         <p>Single-cell sequencing data analysis</p>
 
-        <p class="view"><a href="https://github.com/xfwang/SinSeq">View the Project on GitHub <small>xfwang/SinSeq</small></a></p>
+        <p class="view"><a href="https://github.com/xfwang/Sinsat">View the Project on GitHub <small>xfwang/Sinsat</small></a></p>
 
 
         <ul>
-          <li><a href="https://github.com/xfwang/SinSeq/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/xfwang/SinSeq/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/xfwang/SinSeq">View On <strong>GitHub</strong></a></li>
+          <li><a href="https://github.com/xfwang/Sinsat/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/xfwang/Sinsat/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/xfwang/Sinsat">View On <strong>GitHub</strong></a></li>
         </ul>
       </header>
       <section>
         <h1>
-<a name="sinseq-single-cell-sequencing-analysis-toolkit" class="anchor" href="#sinseq-single-cell-sequencing-analysis-toolkit"><span class="octicon octicon-link"></span></a>SinSeq: Single-cell sequencing analysis toolkit</h1>
+<a name="sinsat-single-cell-sequencing-analysis-toolkit" class="anchor" href="#sinsat-single-cell-sequencing-analysis-toolkit"><span class="octicon octicon-link"></span></a>Sinsat: Single-cell Sequencing Analysis Toolkit</h1>
 
-<p>The Single-cell Sequencing Analysis Toolkit (or SinSeq) provides various utilities for manipulating and analyzing data generated from Single-cell sequencing.</p>
+<p>The Single-cell Sequencing Analysis Toolkit (or Sinsat) provides various utilities for manipulating and analyzing data generated from Single-cell sequencing.</p>
 
-<p>System Requirements: R,GATK,samtools,picard</p>
+<p>System Requirements: R,GATK,samtools,picard, bedtools(optional)</p>
 
 <h2>
 <a name="1-preprocessing" class="anchor" href="#1-preprocessing"><span class="octicon octicon-link"></span></a>1. Preprocessing</h2>
 
 <p><strong>Steps:</strong><br>
 0) .fastq --&gt; .bam (alignment using tools such as bowtie, not included in this toolkit)<br>
-1) Sort and reorder .bam files (according to the referen genome) based on the script <strong><em>bamGATKsort.sh</em></strong> . The human reference genome files can be prepared using the script <strong><em>hg19_reference.sh</em></strong><br>
+1) Sort and reorder .bam files (according to the referen genome) based on the script <strong>bamGATKsort.sh</strong> . The human reference genome files can be prepared using the script <strong>hg19_reference.sh</strong><br>
 Input:cell.bam Output: cell.final.bam</p>
 
 <pre><code>Usage: ./bamGATKsort.sh cell.bam  
@@ -51,16 +51,29 @@ Input:cell.bam Output: cell.final.bam</p>
 <pre><code>java -jar GenomeAnalysisTK.jar \-omitBaseOutput \ -T DepthOfCoverage \ -R hg19.ucsc.fa \ -I cell.final.bam \ -o cell.coverage
 </code></pre>
 
-<p>3) Draw coverage histogram</p>
+<p>3) Draw coverage histogram and sample statistics</p>
 
 <h2>
-<a name="2-initial-cnv-discovery-control-free-calling" class="anchor" href="#2-initial-cnv-discovery-control-free-calling"><span class="octicon octicon-link"></span></a>2. Initial CNV discovery (control-free calling)</h2>
+<a name="2-initial-cnv-discovery-segmentation" class="anchor" href="#2-initial-cnv-discovery-segmentation"><span class="octicon octicon-link"></span></a>2. Initial CNV discovery (segmentation)</h2>
+
+<p><strong>Steps:</strong> 
+1) Convert the .bam file to read-coverage (.rc) file using <code>bamToBed</code> in bedtools or the following one-liner:   </p>
+
+<pre><code>samtools view cell.final.bam | awk '{print $3,$4}' &gt; cell.rc
+</code></pre>
+
+<p>2) Define boundaries based on mappable positions and calculate the GC content in each bin. This step can be done using the scripts <code>hg19.bin.bondaries.50k.py</code> and <code>(hg19.varbin.gc.content.50k.bowtie.k50.py</code>( Baslan Nat. Protoc. 2012).
+Refer to <strong>hg19_reference.sh</strong> for the reference genome.</p>
+
+<p>3) Count the number of reads in each defined bin: <strong>read_count.R</strong></p>
+
+<p>4) GC correction and Initial Segmentation: <strong>gc_cbs.R</strong></p>
 
 <h2>
-<a name="3-control-based-cnv-calling-" class="anchor" href="#3-control-based-cnv-calling-"><span class="octicon octicon-link"></span></a>3. Control-based CNV-calling </h2>
+<a name="3-cnv-calling-with-controls" class="anchor" href="#3-cnv-calling-with-controls"><span class="octicon octicon-link"></span></a>3. CNV-calling with controls</h2>
 
 <h2>
-<a name="4-intratumor-heterogeneity-clustering" class="anchor" href="#4-intratumor-heterogeneity-clustering"><span class="octicon octicon-link"></span></a>4. Intratumor heterogeneity (clustering)</h2>
+<a name="4-intra-tumor-heterogeneity" class="anchor" href="#4-intra-tumor-heterogeneity"><span class="octicon octicon-link"></span></a>4. Intra-tumor heterogeneity</h2>
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/xfwang">xfwang</a></p>
