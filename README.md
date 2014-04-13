@@ -41,7 +41,7 @@ Refer to **hg19_reference.sh** for the reference genome.
 
 3) Count the number of reads in each defined bin: **read_count.R**
 
-4) GC correction and Segmentation: **gc_cbs.R**
+4) GC correction and Initial Segmentation: **gc_cbs.R**
 
 
 
