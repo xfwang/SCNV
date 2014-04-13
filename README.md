@@ -1,7 +1,7 @@
-SinC: Single-cell Sequencing CNV analysis toolkit
+SinC: Single-cell sequencing CNV analysis toolkit
 =======
 
-The Single-cell Sequencing Analysis Toolkit (or SinSeq) provides various utilities for manipulating and analyzing data generated from Single-cell sequencing.
+The Single-cell Sequencing Analysis Toolkit (or SinC) provides various utilities for manipulating and analyzing data generated from Single-cell sequencing.
 
 System Requirements: R,GATK,samtools,picard, bedtools(optional)
 
