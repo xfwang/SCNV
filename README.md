@@ -41,7 +41,7 @@ Refer to **hg19_reference.sh** for the reference genome.
 
 3) Count the number of reads in each defined bin: **read_count.R**  A plot can be very helpful here by comparing the distribution of counts per bins between the cell samples as  implemented in **rc_plot.R**
 
-
+![Speed Comparison](http://bedtools.readthedocs.org/en/latest/_images/speed-comparo.png)
 
 4) GC correction and Initial Segmentation: **gc_cbs.R**
 
