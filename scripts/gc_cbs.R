@@ -1,5 +1,5 @@
 ##Initial segmenation and copy number estimation
-##The following fucntions are modified based on Baslan 2012 Nat Protol-- SRR054616.cbs.r & SRR054616.copynumber.r
+##The following fucntions are the wrapper functions modified based on Baslan 2012 Nat Protol-- SRR054616.cbs.r & SRR054616.copynumber.r
 
 
 ##GC normalizaiton
