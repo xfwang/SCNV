@@ -1,8 +1,7 @@
 Sinsat: Single-cell Sequencing Analysis Toolkit
 =======
 
-contact
------------
+
 xuefeng.wang@stonybrook.edu
 
 
