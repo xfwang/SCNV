@@ -1,6 +1,12 @@
 Sinsat: Single-cell Sequencing Analysis Toolkit
 =======
 
+
+-----------
+xuefeng.wang@stonybrook.edu
+
+
+
 The Single-cell Sequencing Analysis Toolkit (or Sinsat) provides various utilities for manipulating and analyzing data generated from Single-cell sequencing.
 
 System Requirements: R,GATK,samtools,picard, bedtools(optional)
