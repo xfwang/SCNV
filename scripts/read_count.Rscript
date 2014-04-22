@@ -1,0 +1,42 @@
+#!/usr/bin/Rscript
+
+#args[1]: cell file name
+#args[2]: boundary file name
+
+
+args<-commandArgs(TRUE)
+
+##
+INFILE_RC=as.character(args[1])   #read count file "cell.rc"
+INFILE_BO=as.character(args[2])  #"hg19.bin.boundaries.50k.bowtie.k50.sorted.txt"  #boundary file --sorted
+cell.name<-substring(INFILE_RC,1,7) #cell name
+OUTFILE=paste(INFILE_RC,".out",sep="")
+
+RC<-read.table(INFILE_RC, header=F,as.is=T); names(RC)<-c("chr","pos")
+BO<-read.table(INFILE_BO, header=F,as.is=T)[,c(1,2,4,3)]; names(BO)<-c("chr","start","end","abs.pos")
+
+chrcode<-function(x) {
+	if (class(x)!="numeric") {
+	if (length(x)==1) {
+		x<-strsplit(x,"r")[[1]][2]	
+		if (x=="X") {x=23}; if (x=="Y") {x=24}; if (x=="M") {x=25}
+		} else if (length(x)>1) {
+		x=do.call(rbind,strsplit(x,"r"))[,2]
+		x[x=="X"]=23; x[x=="Y"]=24; x[x=="M"]=25
+	}}	
+	return(as.numeric(x))
+}
+
+RC$chr<-chrcode(RC$chr)
+BO$chr<-chrcode(BO$chr)
+
+RC<-split(RC,RC$chr)
+coverage<-apply(BO,1,function(arow){
+	sum((arow[[2]]<RC[[arow[[1]]]]$pos)*(RC[[arow[[1]]]]$pos<arow[[3]]))
+})
+
+BO$coverage<-coverage
+names(BO)[5]<-cell.name
+write.table(BO,file=OUTFILE, append=F, quote=F, sep="\t",row.names=F, col.names=T)
+
+q(save="no")
