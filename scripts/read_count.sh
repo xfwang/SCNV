@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #.bam file --> coverage file
-##
+##xuefeng.wang@stonybrook.edu
 ##
 work_dir="/hms/scratch1/wang/work"  #working directory
 in_dir="/hms/scratch1/wang/batch"  #input file directory
