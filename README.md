@@ -20,11 +20,11 @@ Input:cell.bam Output: cell.final.bam
 ```
 Usage: ./bamGATKsort.sh cell.bam  
 ```
-2) Run **DepthOfCoverage** (Input cell.final.bam)
+2) (Optional) Run **DepthOfCoverage** (Input cell.final.bam)
 ```
 java -jar GenomeAnalysisTK.jar \-omitBaseOutput \ -T DepthOfCoverage \ -R hg19.ucsc.fa \ -I cell.final.bam \ -o cell.coverage
 ```
-3) Draw coverage histogram and sample statistics
+3) (Optional) Draw coverage histogram and sample statistics
 
 
 
