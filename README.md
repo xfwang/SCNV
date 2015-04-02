@@ -32,7 +32,7 @@ java -jar GenomeAnalysisTK.jar \-omitBaseOutput \ -T DepthOfCoverage \ -R hg19.u
 
 
 
-2. Initial CNV discovery (segmentation)
+2. Initial CNV discovery (CBS segmentation)
 -----------
 **Steps:** 
 
