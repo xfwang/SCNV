@@ -45,3 +45,8 @@ Refer to **hg19_reference.sh** for the reference genome.
 -----------
 
 
+4. Copy number estimation
+-----------
+
+
+
