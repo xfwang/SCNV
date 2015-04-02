@@ -49,11 +49,7 @@ Refer to **hg19_reference.sh** for the reference genome.
 
 
 
-3. CNV-calling with controls
+3. Binless Segmentation based on nonhomogeneous poisson process 
 -----------
 
 
-
-
-4. Intra-tumor heterogeneity
------------
