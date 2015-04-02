@@ -6,7 +6,7 @@ xuefeng.wang@stonybrook.edu
 
 
 
-The Single-cell Sequencing Analysis Toolkit (or Sinsat) provides various utilities for manipulating and analyzing data generated from Single-cell sequencing.
+The Single-cell Sequencing Analysis Toolkit (or Sinsat) provides various utilities for manipulating and analyzing data generated from Single-cell sequencing. Current pipeline majorly facilitat the binless segemenation (CNA break point detection) of single-cell sequencing data 
 
 
 1. Preprocessing
