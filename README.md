@@ -7,7 +7,7 @@ xuefeng.wang@stonybrook.edu
 hxchen@ucdavis.edu
 
 
-Sinsat provides functions for performancing CNA analysis with Single-cell DNA sequencing. Current pipeline majorly facilitates the binless segemenation (CNA break point detection) of single-cell DNA sequencing data. 
+Sinsat provides functions for performancing CNA analysis with Single-cell DNA sequencing. Current pipeline majorly facilitates the binless segemenation (CNA break point detection) of single-cell sequencing data. 
 
 
 1. Preprocessing
