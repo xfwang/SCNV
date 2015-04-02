@@ -1,4 +1,4 @@
-Sinsat: Single-cell Sequencing Analysis Toolkit
+Sinsat
 =======
 
 
@@ -7,7 +7,7 @@ xuefeng.wang@stonybrook.edu
 hxchen@ucdavis.edu
 
 
-The Single-cell Sequencing Analysis Toolkit (or Sinsat) provides various utilities for manipulating and analyzing data generated from Single-cell DNA sequencing. Current pipeline majorly facilitates the binless segemenation (CNA break point detection) of single-cell DNA sequencing data. 
+Sinsat provides various utilities for manipulating and analyzing data generated from Single-cell DNA sequencing. Current pipeline majorly facilitates the binless segemenation (CNA break point detection) of single-cell DNA sequencing data. 
 
 
 1. Preprocessing
