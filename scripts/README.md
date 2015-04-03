@@ -31,7 +31,7 @@ Refer to **hg19_reference.sh** for the reference genome.
 3) GC correction and Initial CBS Segmentation (use background read depth as control): **gc_cbs.R**
 
 
-3. Segmentation based on NHPP
+3. Main Function: Segmentation based on NHPP
 -----------
 
 
