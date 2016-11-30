@@ -19,5 +19,16 @@ java -jar GenomeAnalysisTK.jar \-omitBaseOutput \ -T DepthOfCoverage \ -R hg19.u
 
 - (2d) Convert .bam file to .bed file using Bedtools (make sure [Bedtools] (http://bedtools.readthedocs.io/en/latest/content/installation.html) is installed  )
   ```
-bamToBed -i cellname.bam > cellname.bed 
+bamToBed -i cellname.bam > cellname.bed
   ```
+  
+2. Initial CNV discovery
+-----------
+**Steps:** 
+
+1) Define boundaries based on mappable positions and calculate the GC content in each bin. This step can be done using the scripts ``hg19.bin.bondaries.50k.py`` and ``(hg19.varbin.gc.content.50k.bowtie.k50.py``( Baslan Nat. Protoc. 2012).
+Refer to **hg19_reference.sh** for the reference genome.
+
+2)  Count the number of reads in each defined bin in each file (batch mode) using the codes implented in **read_count.sh** and **read_count.Rscript** . A plot can be very helpful here by comparing the distribution of counts per bins between the cell samples as  implemented in **rc_plot.R**. The plot function also offers options to convert raw read count to "RPKM" and with median normalization. 
+
+3) GC correction and Initial CBS Segmentation (use background read depth as control): **gc_cbs.R**
