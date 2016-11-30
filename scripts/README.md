@@ -15,7 +15,7 @@ java -jar GenomeAnalysisTK.jar \-omitBaseOutput \ -T DepthOfCoverage \ -R hg19.u
 ```
 (2c) (Optional) Draw coverage histogram and sample statistics
 
-(2d) Convert .bam file to .bed file using Bedtools (make sure [Bedtools] (http://bedtools.readthedocs.io/en/latest/content/installation.html) is installed  
+(2d) Convert .bam file to .bed file using Bedtools (make sure [Bedtools] (http://bedtools.readthedocs.io/en/latest/content/installation.html) is installed  )
 ```
 bamToBed -i cellname.bam > cellname.bed 
 ```
