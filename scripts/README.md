@@ -31,4 +31,4 @@ Refer to **hg19_reference.sh** for the reference genome.
 
 **(2)**  Count the number of reads in each defined bin in each file (batch mode) using the codes implented in **read_count.sh** and **read_count.Rscript** . A plot can be very helpful here by comparing the distribution of counts per bins between the cell samples as  implemented in **rc_plot.R**. The plot function also offers options to convert raw read count to "RPKM" and with median normalization. 
 
-**(3)** GC correction and Initial CBS Segmentation (use background read depth as control): apply R functions in **gc_cbs.R**
+**(3)** GC correction and Initial CBS Segmentation (use background read depth as control): apply wrapper R functions in **gc_cbs.R**
