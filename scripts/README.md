@@ -6,9 +6,9 @@ A. File Preperation
 
 - (2a) (Optional) Make sure to sort and reorder .bam files (according to the referen genome) based on the script **bamGATKsort.sh** . The human reference genome files can be prepared using the script **hg19_reference.sh**  
   Input:cell.bam Output: cell.final.bam
-```
-Usage: ./bamGATKsort.sh cellname.bam  
-```
+  ```
+  Usage: ./bamGATKsort.sh cellname.bam  
+  ```
 
 - (2b) (Optional) Run **DepthOfCoverage** (Input cell.final.bam)
   ```
