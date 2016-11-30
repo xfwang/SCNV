@@ -22,7 +22,7 @@ java -jar GenomeAnalysisTK.jar \-omitBaseOutput \ -T DepthOfCoverage \ -R hg19.u
 bamToBed -i cellname.bam > cellname.bed
   ```
   
-B. Initial CNV discovery
+B. Initial CNV discovery (Bin-based segmentation)
 -----------
 **One can use online tool [Ginkgo] (http://qb.cshl.edu/ginkgo/) for intial profiling (need to upload all .bed files) or follow following steps for large scale analysis on local computer:** 
 
