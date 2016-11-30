@@ -8,14 +8,16 @@ A. File Preperation
   Input:cell.bam Output: cell.final.bam
 ```
 Usage: ./bamGATKsort.sh cellname.bam  
- ```
+```
+
 - (2b) (Optional) Run **DepthOfCoverage** (Input cell.final.bam)
   ```
 java -jar GenomeAnalysisTK.jar \-omitBaseOutput \ -T DepthOfCoverage \ -R hg19.ucsc.fa \ -I cell.final.bam \ -o cellname.coverage
   ```
- - (2c) (Optional) Draw coverage histogram and sample statistics
 
- - (2d) Convert .bam file to .bed file using Bedtools (make sure [Bedtools] (http://bedtools.readthedocs.io/en/latest/content/installation.html) is installed  )
+- (2c) (Optional) Draw coverage histogram and sample statistics
+
+- (2d) Convert .bam file to .bed file using Bedtools (make sure [Bedtools] (http://bedtools.readthedocs.io/en/latest/content/installation.html) is installed  )
   ```
 bamToBed -i cellname.bam > cellname.bed 
   ```
