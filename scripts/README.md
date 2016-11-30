@@ -4,7 +4,7 @@ A. File Preperation
 
 **(2)** If it is a well cleaned *.bam* file, go to step (2d)
 
-(2a) (Optional) Make sure to Sort and reorder .bam files (according to the referen genome) based on the script **bamGATKsort.sh** . The human reference genome files can be prepared using the script **hg19_reference.sh**  
+(2a) (Optional) Make sure to sort and reorder .bam files (according to the referen genome) based on the script **bamGATKsort.sh** . The human reference genome files can be prepared using the script **hg19_reference.sh**  
 Input:cell.bam Output: cell.final.bam
 ```
 Usage: ./bamGATKsort.sh cell.bam  
