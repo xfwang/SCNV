@@ -22,7 +22,7 @@ java -jar GenomeAnalysisTK.jar \-omitBaseOutput \ -T DepthOfCoverage \ -R hg19.u
 bamToBed -i cellname.bam > cellname.bed
   ```   
  
-     **(3)** If it is a working *.bed* file, we are good.
+**(3)** If it is a working *.bed* file, we are good.
   
 B. Initial CNV discovery (Bin-based segmentation)
 -----------
