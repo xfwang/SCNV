@@ -43,7 +43,9 @@ C. Binless Segmentation
 D. Example ([SRA] (https://www.ncbi.nlm.nih.gov/sra) cell file [SRR1548983](https://www.ncbi.nlm.nih.gov/sra/?term=SRR1548983))
 -----------
 
-
+  ```
+  sam-dump SRR1548983 | samtools view -bS - > SRR1548983.bam
+  ```
 
 
 
