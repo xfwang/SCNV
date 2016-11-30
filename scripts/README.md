@@ -24,7 +24,7 @@ bamToBed -i cellname.bam > cellname.bed
   
 B. Initial CNV discovery (Bin-based segmentation)
 -----------
-**One can use online tool [Ginkgo] (http://qb.cshl.edu/ginkgo/) for intial profiling (need to upload all .bed files, minimum 3 cell files) or follow following steps for a large scale analysis on local computers:** 
+**One can use online tool [Ginkgo] (http://qb.cshl.edu/ginkgo/) for intial profiling (need to upload all .bed files, minimum 3 cell files) or follow following steps for running a large number of cells on local computers:** 
 
 **(1)** Define boundaries based on mappable positions and calculate the GC content in each bin. This step can be done using the scripts ``hg19.bin.bondaries.50k.py`` and ``hg19.varbin.gc.content.50k.bowtie.k50.py``(Baslan Nat. Protoc. 2012).
 Refer to **hg19_reference.sh** for the reference genome.
