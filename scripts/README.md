@@ -34,11 +34,11 @@ Refer to **hg19_reference.sh** for the reference genome.
 **(3)** GC correction and Initial CBS Segmentation (use background read depth as control): apply wrapper R functions in **gc_cbs.R**
 
 
-3. Main Function: Binless Segmentation
+C. Main Function: Binless Segmentation
 -----------
 
 
-4. Example ([SRA] (https://www.ncbi.nlm.nih.gov/sra) cell file [SRR1548983](https://www.ncbi.nlm.nih.gov/sra/?term=SRR1548983))
+D. Example ([SRA] (https://www.ncbi.nlm.nih.gov/sra) cell file [SRR1548983](https://www.ncbi.nlm.nih.gov/sra/?term=SRR1548983))
 -----------
 
 
