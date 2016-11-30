@@ -45,6 +45,7 @@ D. Example ([SRA] (https://www.ncbi.nlm.nih.gov/sra) cell file [SRR1548983](http
 
   ```
   sam-dump SRR1548983 | samtools view -bS - > SRR1548983.bam
+  bamToBed -i SRR1548983.bam > bed_files/SRR1548983.bed
   ```
 
 
