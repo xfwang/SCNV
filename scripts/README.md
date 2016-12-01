@@ -1,6 +1,6 @@
 A. File Preperation
 -----------
-**(1)** If it is a *.fastq* file, alignment need to be done using tools such as bowtie (not included in this toolkit), then go to step (2).
+**(1)** If it is a *.fastq* file, alignment need to be done using tools such as bowtie or bwa (instructions not included in this toolkit), then go to step (2).
 
 **(2)** If it is a well cleaned *.bam* file, go directly to step (2d)
 
