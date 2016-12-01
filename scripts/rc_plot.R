@@ -1,5 +1,5 @@
 #Exploration analysis of read count matrix file
-#xuefeng.wang@stonybrook.edu
+#xuefeng.wang@moffitt.org; xuefeng.wang@yale.edu
 
 
 #Violin plot function to compare the distribution of counts per bins between the cell samples
