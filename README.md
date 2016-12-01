@@ -6,4 +6,5 @@ SCNV provides functions for performancing CNV analysis with Single-cell DNA sequ
 
 Citation
 --------
-*Please cite the following article if you use BEDTools in your research*:
+*Please cite the following article if you use SCNV in your research*:
+Manuscript currently under review/revision
