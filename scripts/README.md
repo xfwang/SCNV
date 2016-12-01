@@ -24,7 +24,7 @@ bamToBed -i cellname.bam > cellname.bed
  
 **(3)** If it is a working *.bed* file, we are good.
   
-B. Initial CNV discovery (Bin-based segmentation)
+B. Initial CNV profiling (Bin-based segmentation)
 -----------
 **One can use online tool [Ginkgo] (http://qb.cshl.edu/ginkgo/) for intial profiling (need to upload all .bed files, minimum 3 cell files) or follow following steps for running a large number of cells on local computers:** 
 
