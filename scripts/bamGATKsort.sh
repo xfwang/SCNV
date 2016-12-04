@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #bam file preprocessing -->GATK-ready
-##
+##xuefeng.wang@moffitt.org
 
 date #echo the time at start
 picard_path="~/libraries/picard-tools-1.107" #picard directory
