@@ -1,6 +1,6 @@
 
 ## Example file for reading count from a single file
-
+##xuefeng.wang@moffitt.org
 
 INFILE_RC="cell.rc"   #readcount file
 INFILE_BO="hg19.bin.boundaries.5k.bowtie.k50.txt"  #boundary file
