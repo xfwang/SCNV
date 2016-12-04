@@ -2,9 +2,9 @@
 ####Example##
 source(gc_cbs_functions.R)
 
-rc_data<-read.table("/ycga-ba/home/xw322/knouse/SCNV/rc_matrix.txt",head=TRUE,colClasses = "numeric")
-gc.data<-read.table("/ycga-ba/home/xw322/knouse/SCNV/hg19.varbin.gc.content.50k.bowtie.k50.txt",header=T)  #gc file
-setwd("/ycga-ba/home/xw322/knouse/SCNV/output/") #results directory
+rc_data<-read.table("rc_matrix.txt",head=TRUE,colClasses = "numeric")
+gc.data<-read.table("hg19.varbin.gc.content.50k.bowtie.k50.txt",header=T)  #gc file
+setwd("/SCNV/output/") #results directory
 require(DNAcopy)
 
 for (i in 1:(ncol(rc_data)-4)) {
