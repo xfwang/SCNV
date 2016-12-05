@@ -35,6 +35,7 @@ Refer to **hg19_reference.sh** for the reference genome.
 
 **(3)** GC correction and Initial CBS Segmentation (use background read depth as control): apply wrapper R functions in **gc_cbs.R**
 
+**(4)** Polidy estimation
 
 C. Binless Segmentation
 -----------
