@@ -48,6 +48,8 @@ Download file from SRA
   ```
   sam-dump SRR1548983 | samtools view -bS - > SRR1548983.bam
   bamToBed -i SRR1548983.bam > bed_files/SRR1548983.bed
+  echo "SRR1548983" >> bam_list.txt
+  bash read_count.sh
   ```
 
 
