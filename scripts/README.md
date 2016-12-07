@@ -55,8 +55,8 @@ Download and prepare input files
 Ploidy estimation (in R)
   ```
   source("ploidy/dsw_ploidy.R")
-  rc_data<-read.table("/data/rc_matrix.txt",head=TRUE,colClasses = "numeric")
-  gc.data<-read.table("/data/bin50k.txt",header=T)
+  rc_data<-read.table("data/rc_matrix.txt",head=TRUE,colClasses = "numeric")
+  gc.data<-read.table("data/bin50k.txt",header=T)
   dsw_plot(rc_data,gc.data)
 
   ```
