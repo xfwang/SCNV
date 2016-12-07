@@ -39,7 +39,7 @@ Refer to **hg19_reference.sh** for the reference genome.
 
 C. Binless Segmentation
 -----------
-
+Use **scnv.R**
 
 D. Example ([SRA] (https://www.ncbi.nlm.nih.gov/sra) cell file [SRR1548983](https://www.ncbi.nlm.nih.gov/sra/?term=SRR1548983))
 -----------
