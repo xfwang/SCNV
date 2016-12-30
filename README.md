@@ -12,4 +12,4 @@ Citation
 --------
 *Please cite the following article if you use SCNV in your research*:
 
-Wang X. et al. DNA copy number profiling using single cell sequencing. *Briefings in Bioinformatic* (In Press)
+Wang X. et al. DNA copy number profiling using single cell sequencing. *Briefings in Bioinformatics* (In Press)
