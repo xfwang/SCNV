@@ -12,4 +12,4 @@ Citation
 --------
 *Please cite the following article if you use SCNV in your research*:
 
-Manuscript currently under review/revision
+DNA copy number profiling using single cell sequencing. Briefings in Bioinformatic (In Press)
